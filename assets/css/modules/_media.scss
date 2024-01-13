@@ -1,0 +1,146 @@
+@include media-breakpoint-up(xs) {
+    //480
+}
+
+@include media-breakpoint-up(sm) {
+    //576
+}
+
+@include media-breakpoint-up(md) {
+    //768
+}
+
+@include media-breakpoint-up(lg) {
+    //992
+}
+
+@include media-breakpoint-up(xl) {
+    //1200
+}
+
+@include media-breakpoint-up(xxl) {
+    //1400
+}
+
+
+/* NON Mobile ----------------- */
+
+@include media-breakpoint-down(xxl) {
+    //1399.98
+}
+
+@include media-breakpoint-down(xl) {
+    //1199.98
+}
+
+@include media-breakpoint-down(lg) {
+    //991.98
+}
+
+@include media-breakpoint-down(md) {
+    //767.98
+}
+
+@include media-breakpoint-down(sm) {
+    //575.98
+}
+
+@include media-breakpoint-down(xs) {
+    //479.98
+}
+
+
+// *****************************************************
+
+@media all and (max-width:575px) and (min-width:320px) {
+//    ****************index page
+.hero-section .hero-slider-container .hero-slide-inner-parent .slider-content-wrapper h1::after{
+    content: none!important;
+}
+.hero-section .hero-slider-container .hero-slide-inner-parent .slider-content-wrapper h1 {
+    line-height: 36px;
+    font-size: 20px;
+}
+.hero-section .hero-slider-container .hero-slide-inner-parent .slider-content-wrapper h1 span {
+    font-size: 25px;
+}
+.heading-wrapper h2{
+    font-size: 24px;
+}
+.accordian-section .accordian-sec-inner-parent .accordion ul li div a *{
+    display: block;
+    margin: 0 auto;
+}
+.accordian-section .accordian-sec-inner-parent .accordion ul li div a{
+    height:50vh;
+}
+.accordian-section .accordian-sec-inner-parent .accordion ul li div a::after{
+    background-color: rgba(0, 0, 0, 0.75)!important;
+}
+.hamburger{
+    display: block!important;
+}
+.site-nav {
+    background-color: black;
+    .container-fluid{
+    flex-direction: row-reverse!important;
+}
+}
+.navbar-brand img{
+    height: 75px !important;
+    position: relative!important;
+    top:1px!important;
+    right: 0!important;
+    width: auto!important;
+    
+}
+.ms-staff-carousel .ms-nav-next{
+    right: 2px !important;
+}
+.ms-staff-carousel .ms-nav-prev{
+    left: 2px !important;
+}
+.row-cols-5 > * {
+    width: 100%!important;
+}
+}
+
+@media all and (max-width:767px) and (min-width:576px) {
+    .hero-section .hero-slider-container .hero-slide-inner-parent .slider-content-wrapper h1::after{
+        content: none!important;
+    }
+        .hamburger{
+            display: block!important;
+        }
+    .accordian-section .accordian-sec-inner-parent .accordion ul li div a *{
+        margin: 0 auto!important;
+    }
+    .accordian-section .accordian-sec-inner-parent .accordion ul li div a::after{
+        width: 100%!important;
+        max-width: none!important;
+    }
+}
+
+@media all and (max-width:991px) and (min-width:768px) {
+    .hamburger{
+        display: block!important;
+    }
+    .hero-section .hero-slider-container .hero-slide-inner-parent .slider-content-wrapper h1::after{
+        content: none!important;
+    }
+}
+
+@media all and (max-width:1199px) and (min-width:992px) {
+    
+}
+
+@media screen and (max-width: 1376px) {
+    
+}
+
+@media all and (max-width:2000px) and (min-width:992px) {
+   
+}
+
+// specific media query for slider
+@media all and (max-width:1100px) and (min-width:768px) {}
